@@ -1,0 +1,50 @@
+.advantages__box {
+  @extend %flex-elem-centr;
+  margin-bottom: 30px;
+  max-width: 450px;
+  height: 120px;
+  background-color: var(--some-section-bg-color);
+}
+
+.advantages_title {
+  @include title-style(14px, uppercase, 1.14);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+// ---  @media  ---
+
+// Mobil
+@media screen and (max-width: 766px) {
+  .advantages__item {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+// Tablet
+@media screen and (min-width: 767px) {
+  .advantages__list {
+    @include flexing-pro(row);
+    flex-wrap: wrap;
+    gap: 29px;
+  }
+
+  .advantages__item {
+    width: 354px;
+  }
+  .advantages__box {
+    width: 354px;
+  }
+}
+
+// Dasktop
+@media screen and (min-width: 1200px) {
+  .advantages__item {
+    width: 270px;
+  }
+  .advantages__box {
+    width: 270px;
+  }
+}

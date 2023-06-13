@@ -1,0 +1,24 @@
+// base
+@import "./base/_base";
+
+// utils
+@import "./utils/_variables";
+@import "./utils/_placeholder";
+@import "./utils/mixin";
+
+// components
+@import "./components/_container";
+@import "./components/button";
+@import "./components/logo";
+@import "./components/socials";
+
+// layouts
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/advantages";
+@import "./layouts/team";
+@import "./layouts/clients";
+@import "./layouts/footer";
+@import "./components/socials";
+@import "./layouts/activity";
+@import "./layouts/backdrop";

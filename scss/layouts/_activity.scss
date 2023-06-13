@@ -1,0 +1,30 @@
+.activity__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 29px;
+}
+
+.activity__item {
+  position: relative;
+  width: 370px;
+  height: 294px;
+}
+
+.activity__title {
+  @include title-style(14px, uppercase, 1.14);
+  padding: 27px 0;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  color: var(--primary-white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+@media screen and (max-width: 1199px) {
+  .activity {
+    display: none;
+  }
+}

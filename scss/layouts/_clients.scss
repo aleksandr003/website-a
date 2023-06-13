@@ -1,0 +1,54 @@
+.clients__title {
+  @include title-style(28px, initial, 1.19);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.clients__list {
+  @include flexing-pro(row);
+  gap: 29px;
+}
+
+.clients__link {
+  width: 210px;
+  height: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid var(--icons-color);
+  border-radius: 4px;
+
+  transition: border 250ms linear;
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.clients__icon {
+  fill: var(--icons-color);
+
+  transition: fill 250ms linear;
+
+  .clients__link:hover & {
+    fill: var(--accent-color);
+  }
+}
+
+// --- @media ---
+
+// Tablet
+@media screen and (min-width: 767px) {
+  .clients__link {
+    width: 226px;
+  }
+}
+
+// Daskpot
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+  }
+}
